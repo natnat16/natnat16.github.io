@@ -1,0 +1,418 @@
+/*
+ * Globals
+ */
+a, a:hover {
+  text-decoration: none;
+}
+
+.section-heading {
+  margin-bottom: 0;
+  font-size: calc(100% + 1.3vw);
+}
+
+/*
+  * Base structure
+  */
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0E185F;
+  overflow: auto;
+}
+
+body {
+  text-align: center;
+  /* display: -ms-flexbox; */
+  /* display: -webkit-box; */
+  /* display: flex; */
+  /* -ms-flex-pack: center; */
+  /* -webkit-box-pack: center; */
+  justify-content: center;
+  color: #E8FFC2;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem #E8FFC2;
+  font-family: 'Kalam', cursive;
+}
+
+h2 {
+  font-style: oblique;
+}
+
+.container-fluid {
+  padding: 10% 10%;
+}
+
+/*
+ * Header
+ */
+.navigation {
+  position: fixed;
+  padding: 0 2%;
+  z-index: 1;
+  font-size: 1.2rem;
+  top: 0;
+}
+
+.navbar-dark .navbar-brand {
+  color: #E8FFC2;
+  width: 5rem;
+}
+
+.nav-menu {
+  align-self: self-start;
+  padding-top: 1%;
+}
+
+#navbarNavAltMarkup {
+  /* position: absolute;
+  z-index: 1; */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(232, 255, 194, .75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #E8FFC2;
+}
+
+.nav-link-text {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* For tablets: */
+@media (min-width: 768px) {
+  .nav-link-text {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-menu {}
+}
+
+/* For Deasktops: */
+@media (min-width: 992px) {
+  .navbar-dark .navbar-brand {
+    width: 6rem;
+  }
+}
+
+/*
+ * About
+ */
+#about {
+  scroll-margin-top: 6em;
+}
+
+.about-me {
+  /* margin-bottom: 0; */
+  /*large*/
+  margin: 20% 0;
+}
+
+.about-pic {
+  width: 20%;
+  border-bottom: 10px solid #38252f;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.about-text {
+  padding: 2% 6%;
+  font-size: calc(100% + 0.3vw);
+}
+
+/* For tablets: */
+@media (min-width: 768px) {
+  .about-text {
+    padding: 1% 10%;
+  }
+}
+
+/* For Deasktops: */
+@media (min-width: 992px) {
+  .about-me {
+    /* margin-bottom: 0; */
+    /*large*/
+    margin: 0 0;
+  }
+
+  .about-text {
+    padding: 0% 20%;
+  }
+}
+
+/*
+ * Publications
+ */
+#publications {
+  scroll-margin-top: 7em;
+}
+
+.papers-pub {
+  padding: 0 13%;
+}
+
+.pub-table {
+  color: #E8FFC2;
+  text-align: justify;
+}
+
+.table-item {
+  font-family: 'Pangolin', cursive;
+  font-size: 0.9rem;
+}
+
+.table-link {
+  color: #E8FFC2;
+  /* text-decoration: none; */
+}
+
+.table-link:hover {
+  color: #2FA4FF;
+  /* text-decoration: none; */
+}
+
+/* For tablets: */
+@media (min-width: 768px) {
+  #publications {
+    scroll-margin-top: 6em;
+  }
+}
+
+/* For Deasktops: */
+@media (min-width: 992px) {
+  #publications {
+    scroll-margin-top: 2.8em;
+  }
+
+  .papers-pub {
+    padding: 0 23%;
+  }
+
+  .table-item {
+    font-size: 1rem;
+  }
+}
+
+/*
+ * portfolio
+ */
+#portfolio {
+  scroll-margin-top: 4em;
+}
+
+.port {
+  margin-top: 15%;
+}
+
+.portfolio-heading {
+  padding-bottom: 1.4rem;
+}
+
+.projects-row {
+  justify-content: center;
+  padding: 10px;
+  width: 82%;
+  margin: auto;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.project {
+  /* rgb(14, 24, 95) */
+  border: 1px solid rgba(0, 255, 221, 0.25);
+  /*rgb(30, 94, 175);*/
+  border-radius: 0.4rem;
+  box-shadow: 1px 0rem 3rem 10px rgba(47, 164, 255, 0.6);
+  background-color: rgb(22, 59, 135);
+  ;
+  overflow: auto;
+  margin: 10px 20px 10px 0;
+  padding-left: 0;
+  padding-right: 0;
+  height: 20rem;
+  /*background-image: url()*/
+}
+
+.pj-img {
+  display: inline-block;
+  width: 100%;
+  height: 55%;
+  border-radius: 0.4rem;
+  box-shadow: 0 1rem 3rem rgba(47, 164, 255, 0.6);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.pj-info {
+  display: inline-block;
+  width: 100%;
+}
+
+.pj-heading {
+  padding: 2% 0 2% 0;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.pj-txt {
+  font-weight: 100;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 2% 3.5%;
+  margin-bottom: 0;
+}
+
+.lng-icons {
+  text-align: left;
+  padding: 0 2% 1% 2%;
+  height: 25%;
+}
+
+.logo-py, .logo-css, .logo-html {
+  height: 1.5rem;
+  margin: 1%;
+}
+
+.logo-bs {
+  height: 1.6rem;
+  margin: 1%;
+}
+
+.code-link {
+  color: #F473B9;
+  font-size: 1rem;
+}
+
+.code-link:hover {
+  color: #FFBDE6;
+}
+
+/* For tablets: */
+@media (min-width: 540px) {
+
+  /*or (min-width: 768px) {*/
+  .projects-row {
+    width: 100%;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    flex-direction: row;
+  }
+
+  .project {
+    padding-right: 15px;
+    height: 9.8rem;
+  }
+
+  .pj-img {
+    width: 36%;
+    float: left;
+    height: 100%;
+  }
+
+  .pj-info {
+    width: 64%;
+  }
+}
+
+/* For desktops: */
+@media (min-width: 992px) and (max-width: 1140px) {
+  .col-mdlg {
+    flex-basis: 47%;
+    max-width: 47%;
+  }
+}
+
+@media (min-width: 992px) {
+  #portfolio {
+    scroll-margin-top: 0;
+  }
+
+  .projects-row {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .project {
+    height: 11.2rem;
+  }
+
+  .pj-img {
+    width: 47%;
+    float: left;
+    height: 100%;
+  }
+
+  .pj-info {
+    width: 53%;
+  }
+
+  .pj-heading {
+    font-size: calc(1.04rem + 0.263vw);
+  }
+
+  .pj-txt {
+    font-size: calc(0.75rem + 0.395vw);
+  }
+}
+
+/*
+ * Footer
+ */
+.contact {
+  width: 100%;
+  text-align: center;
+  bottom: 2%;
+  padding: 1% 0;
+}
+
+.f-icon {
+  padding: 1% 0.25rem;
+  color: #00FFDD;
+  font-size: 1.5rem;
+  /* color: #2FA4FF; */
+}
+
+.f-icon:hover {
+  color: #2FA4FF;
+  /* text-decoration: none; */
+}
+
+.footcred {
+  color: rgba(232, 255, 194, .4);
+  font-size: 0.6rem;
+}
+
+/* For tablets: */
+@media (min-width: 540px) {}
+
+/* For desktops: */
+@media (min-width: 992px) {
+  .f-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/*
+used colors:
+#0E185F rgb(14, 24, 95)
+#2FA4FF rgb(47, 164, 255)
+#00FFDD rgb(0, 255, 221)
+#E8FFC2 rgb(232, 255, 194)
+*/
+/* .nav-head .nav-link {
+  padding: .25rem 0;
+font-weight: 700;
+/* background-color: transparent; */
+/* border-bottom: .25rem solid transparent; */
+/* .nav-head .nav-link:hover,
+.nav-head .nav-link:focus {
+color: rgba(232, 255, 194, .25);
+  border-bottom-color: rgba(232, 255, 194, .25);
+}
+
+} */
