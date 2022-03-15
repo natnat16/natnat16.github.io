@@ -134,11 +134,13 @@ h2 {
 /* For tablets: */
 @media (min-width: 768px) {
   #about {
-    scroll-margin-top: 4em;
+    scroll-margin-top: 8em;
   }
-  .about-me {
+
+  /* .about-me {
     padding-top: 10%;
-  }
+  } */
+  
   .about-text {
     padding: 1% 10%;
   }
@@ -169,7 +171,6 @@ h2 {
   }
 }
 
-
 /*
  * Publications
  */
@@ -193,18 +194,17 @@ h2 {
 
 .table-link {
   color: #E8FFC2;
-  /* text-decoration: none; */
 }
 
 .table-link:hover {
   color: #2FA4FF;
-  /* text-decoration: none; */
 }
 
 /* For tablets: */
 @media (min-width: 768px) {
   #publications {
-    scroll-margin-top: 6em;
+    scroll-margin-top: 10em;
+    height: 100vh;
   }
   .table-item {
     font-size: 0.9rem;
@@ -261,18 +261,15 @@ h2 {
 }
 
 .project {
-  /* rgb(14, 24, 95) */
   border: 1px solid rgba(0, 255, 221, 0.25);
   border-radius: 0.4rem;
   box-shadow: 1px 0rem 3rem 10px rgba(47, 164, 255, 0.6);
   background-color: rgb(22, 59, 135);
-  ;
   overflow: auto;
   margin: 10px 20px 10px 0;
   padding-left: 0;
   padding-right: 0;
   height: 23rem;
-  /*background-image: url()*/
 }
 
 .pj-img {
@@ -331,14 +328,15 @@ h2 {
 
 /* For tablets: */
 @media (min-width: 540px) {
+  #portfolio {
+    scroll-margin-top: 2em;
+  }
 
   .portfolio-heading {
     padding-bottom: 1.4rem;
   }
   .projects-row {
     width: 100%;
-    /* margin-right: -15px;
-    margin-left: -15px; */
     flex-direction: row;
   }
 
@@ -423,12 +421,10 @@ h2 {
   padding: 1% 0.25rem;
   color: #00FFDD;
   font-size: 1.5rem;
-  /* color: #2FA4FF; */
 }
 
 .f-icon:hover {
   color: #2FA4FF;
-  /* text-decoration: none; */
 }
 
 .footcred {
@@ -453,15 +449,3 @@ used colors:
 #00FFDD rgb(0, 255, 221)
 #E8FFC2 rgb(232, 255, 194)
 */
-/* .nav-head .nav-link {
-  padding: .25rem 0;
-font-weight: 700;
-/* background-color: transparent; */
-/* border-bottom: .25rem solid transparent; */
-/* .nav-head .nav-link:hover,
-.nav-head .nav-link:focus {
-color: rgba(232, 255, 194, .25);
-  border-bottom-color: rgba(232, 255, 194, .25);
-}
-
-} */
