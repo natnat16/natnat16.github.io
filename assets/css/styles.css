@@ -54,11 +54,11 @@ h2 {
 }
 
 .nav-menu {
-  background: rgba(12,24,95,0.9);
+  background: rgba(12, 24, 95, 0.9);
   align-self: self-start;
   padding-top: 1%;
   border-radius: 0.4em;
-  border: 2px groove rgba(47,164,255,0.6);
+  border: 2px groove rgba(47, 164, 255, 0.6);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -90,12 +90,14 @@ h2 {
     display: block;
     width: 100%;
   }
+
   .nav-menu {
     background: transparent;
     border: none;
   }
+
   .nav-link {
-  border-bottom: none;
+    border-bottom: none;
   }
 }
 
@@ -140,7 +142,6 @@ h2 {
   /* .about-me {
     padding-top: 10%;
   } */
-  
   .about-text {
     padding: 1% 10%;
   }
@@ -151,6 +152,7 @@ h2 {
   #about {
     scroll-margin-top: 7em;
   }
+
   .about-me {
     margin: 8% 0;
     padding-top: 5%;
@@ -206,6 +208,7 @@ h2 {
     scroll-margin-top: 10em;
     height: 100vh;
   }
+
   .table-item {
     font-size: 0.9rem;
   }
@@ -227,10 +230,11 @@ h2 {
 }
 
 @media (min-width: 1700px) {
-	  #publications {
+  #publications {
     scroll-margin-top: 8em;
   }
-	.table-item {
+
+  .table-item {
     font-size: 1.15rem;
   }
 }
@@ -307,7 +311,7 @@ h2 {
   height: 25%;
 }
 
-.logo-py, .logo-css, .logo-html {
+.logo-py, .logo-css, .logo-html, .logo-js {
   height: 1.5rem;
   margin: 1%;
 }
@@ -317,12 +321,13 @@ h2 {
   margin: 1%;
 }
 
-.code-link {
+.code-link, .site-link {
   color: #F473B9;
   font-size: 1rem;
+  font-weight: 400;
 }
 
-.code-link:hover {
+.code-link:hover, .site-link:hover {
   color: #FFBDE6;
 }
 
@@ -335,6 +340,7 @@ h2 {
   .portfolio-heading {
     padding-bottom: 1.4rem;
   }
+
   .projects-row {
     width: 100%;
     flex-direction: row;
@@ -357,7 +363,6 @@ h2 {
 }
 
 /* For desktops: */
-
 @media (min-width: 992px) and (max-width: 1140px) {
   .col-mdlg {
     flex-basis: 47%;
@@ -369,7 +374,6 @@ h2 {
   #portfolio {
     scroll-margin-top: -2em;
   }
-
 
   .projects-row {
     width: 100%;
@@ -400,10 +404,8 @@ h2 {
 }
 
 @media (min-width: 1700px) {
-
   .port {
-	  margin-bottom: 3.5%;
-
+    margin-bottom: 3.5%;
   }
 }
 
@@ -414,7 +416,7 @@ h2 {
   width: 100%;
   text-align: center;
   bottom: 2%;
-  padding: 1% 0;
+  padding: 1% 0 0 0;
 }
 
 .f-icon {
@@ -427,10 +429,37 @@ h2 {
   color: #2FA4FF;
 }
 
-.footcred {
+.footcred, .btn-footer {
   color: rgba(232, 255, 194, .4);
   font-size: 0.6rem;
 }
+
+.btn-footer, .btn-footer:focus {
+  width: 200px;
+  padding: 0.1rem 0.7rem;
+  box-shadow: none;
+}
+
+.popover-header {
+  background-color: rgb(47, 164, 255);
+  font-size: 0.7rem;
+  color: #222;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.popover-body {
+  color: rgb(100, 100, 100);
+  font-size: 0.6rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+[title~=logo], [title~=license]   {
+  color: rgb(50, 50, 50);
+  margin-bottom: 1px;
+}
+
 
 /* For tablets: */
 @media (min-width: 540px) {}
