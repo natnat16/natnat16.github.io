@@ -455,11 +455,10 @@ h2 {
   padding-bottom: 1%;
 }
 
-[title~=logo], [title~=license]   {
+[title~=logo], [title~=license] {
   color: rgb(50, 50, 50);
   margin-bottom: 1px;
 }
-
 
 /* For tablets: */
 @media (min-width: 540px) {}
